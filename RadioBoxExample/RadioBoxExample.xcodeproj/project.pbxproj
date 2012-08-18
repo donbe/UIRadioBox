@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82BE319415DF432000C14681 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BE319315DF432000C14681 /* UIKit.framework */; };
+		82BE319615DF432000C14681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BE319515DF432000C14681 /* Foundation.framework */; };
+		82BE319815DF432000C14681 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BE319715DF432000C14681 /* CoreGraphics.framework */; };
+		82BE319E15DF432000C14681 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82BE319C15DF432000C14681 /* InfoPlist.strings */; };
+		82BE31A015DF432000C14681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BE319F15DF432000C14681 /* main.m */; };
+		82BE31A415DF432000C14681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BE31A315DF432000C14681 /* AppDelegate.m */; };
+		82BE31A715DF432000C14681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BE31A615DF432000C14681 /* ViewController.m */; };
+		82BE31AA15DF432000C14681 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BE31A815DF432000C14681 /* ViewController.xib */; };
+		82BE31BD15DF432F00C14681 /* UIRadioBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BE31B615DF432F00C14681 /* UIRadioBox.m */; };
+		82BE31BE15DF432F00C14681 /* uiradiobox_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82BE31B715DF432F00C14681 /* uiradiobox_selected.png */; };
+		82BE31BF15DF432F00C14681 /* uiradiobox_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82BE31B815DF432F00C14681 /* uiradiobox_selected@2x.png */; };
+		82BE31C015DF432F00C14681 /* uiradiobox_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82BE31B915DF432F00C14681 /* uiradiobox_unselected.png */; };
+		82BE31C115DF432F00C14681 /* uiradiobox_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82BE31BA15DF432F00C14681 /* uiradiobox_unselected@2x.png */; };
+		82BE31C215DF432F00C14681 /* UIRadioBoxItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BE31BC15DF432F00C14681 /* UIRadioBoxItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82BE318F15DF432000C14681 /* RadioBoxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioBoxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BE319315DF432000C14681 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82BE319515DF432000C14681 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82BE319715DF432000C14681 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82BE319B15DF432000C14681 /* RadioBoxExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadioBoxExample-Info.plist"; sourceTree = "<group>"; };
+		82BE319D15DF432000C14681 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82BE319F15DF432000C14681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82BE31A115DF432000C14681 /* RadioBoxExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioBoxExample-Prefix.pch"; sourceTree = "<group>"; };
+		82BE31A215DF432000C14681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82BE31A315DF432000C14681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82BE31A515DF432000C14681 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82BE31A615DF432000C14681 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82BE31A915DF432000C14681 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		82BE31B515DF432F00C14681 /* UIRadioBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRadioBox.h; sourceTree = "<group>"; };
+		82BE31B615DF432F00C14681 /* UIRadioBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRadioBox.m; sourceTree = "<group>"; };
+		82BE31B715DF432F00C14681 /* uiradiobox_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiradiobox_selected.png; sourceTree = "<group>"; };
+		82BE31B815DF432F00C14681 /* uiradiobox_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uiradiobox_selected@2x.png"; sourceTree = "<group>"; };
+		82BE31B915DF432F00C14681 /* uiradiobox_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiradiobox_unselected.png; sourceTree = "<group>"; };
+		82BE31BA15DF432F00C14681 /* uiradiobox_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uiradiobox_unselected@2x.png"; sourceTree = "<group>"; };
+		82BE31BB15DF432F00C14681 /* UIRadioBoxItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRadioBoxItem.h; sourceTree = "<group>"; };
+		82BE31BC15DF432F00C14681 /* UIRadioBoxItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRadioBoxItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82BE318C15DF432000C14681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BE319415DF432000C14681 /* UIKit.framework in Frameworks */,
+				82BE319615DF432000C14681 /* Foundation.framework in Frameworks */,
+				82BE319815DF432000C14681 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82BE318415DF432000C14681 = {
+			isa = PBXGroup;
+			children = (
+				82BE319915DF432000C14681 /* RadioBoxExample */,
+				82BE319215DF432000C14681 /* Frameworks */,
+				82BE319015DF432000C14681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82BE319015DF432000C14681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82BE318F15DF432000C14681 /* RadioBoxExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82BE319215DF432000C14681 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82BE319315DF432000C14681 /* UIKit.framework */,
+				82BE319515DF432000C14681 /* Foundation.framework */,
+				82BE319715DF432000C14681 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82BE319915DF432000C14681 /* RadioBoxExample */ = {
+			isa = PBXGroup;
+			children = (
+				82BE31B415DF432F00C14681 /* UIradioBox */,
+				82BE31A215DF432000C14681 /* AppDelegate.h */,
+				82BE31A315DF432000C14681 /* AppDelegate.m */,
+				82BE31A515DF432000C14681 /* ViewController.h */,
+				82BE31A615DF432000C14681 /* ViewController.m */,
+				82BE31A815DF432000C14681 /* ViewController.xib */,
+				82BE319A15DF432000C14681 /* Supporting Files */,
+			);
+			path = RadioBoxExample;
+			sourceTree = "<group>";
+		};
+		82BE319A15DF432000C14681 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82BE319B15DF432000C14681 /* RadioBoxExample-Info.plist */,
+				82BE319C15DF432000C14681 /* InfoPlist.strings */,
+				82BE319F15DF432000C14681 /* main.m */,
+				82BE31A115DF432000C14681 /* RadioBoxExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82BE31B415DF432F00C14681 /* UIradioBox */ = {
+			isa = PBXGroup;
+			children = (
+				82BE31B515DF432F00C14681 /* UIRadioBox.h */,
+				82BE31B615DF432F00C14681 /* UIRadioBox.m */,
+				82BE31B715DF432F00C14681 /* uiradiobox_selected.png */,
+				82BE31B815DF432F00C14681 /* uiradiobox_selected@2x.png */,
+				82BE31B915DF432F00C14681 /* uiradiobox_unselected.png */,
+				82BE31BA15DF432F00C14681 /* uiradiobox_unselected@2x.png */,
+				82BE31BB15DF432F00C14681 /* UIRadioBoxItem.h */,
+				82BE31BC15DF432F00C14681 /* UIRadioBoxItem.m */,
+			);
+			path = UIradioBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82BE318E15DF432000C14681 /* RadioBoxExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BE31AD15DF432000C14681 /* Build configuration list for PBXNativeTarget "RadioBoxExample" */;
+			buildPhases = (
+				82BE318B15DF432000C14681 /* Sources */,
+				82BE318C15DF432000C14681 /* Frameworks */,
+				82BE318D15DF432000C14681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioBoxExample;
+			productName = RadioBoxExample;
+			productReference = 82BE318F15DF432000C14681 /* RadioBoxExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82BE318615DF432000C14681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Chu Mohua";
+			};
+			buildConfigurationList = 82BE318915DF432000C14681 /* Build configuration list for PBXProject "RadioBoxExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82BE318415DF432000C14681;
+			productRefGroup = 82BE319015DF432000C14681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82BE318E15DF432000C14681 /* RadioBoxExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82BE318D15DF432000C14681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BE319E15DF432000C14681 /* InfoPlist.strings in Resources */,
+				82BE31AA15DF432000C14681 /* ViewController.xib in Resources */,
+				82BE31BE15DF432F00C14681 /* uiradiobox_selected.png in Resources */,
+				82BE31BF15DF432F00C14681 /* uiradiobox_selected@2x.png in Resources */,
+				82BE31C015DF432F00C14681 /* uiradiobox_unselected.png in Resources */,
+				82BE31C115DF432F00C14681 /* uiradiobox_unselected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82BE318B15DF432000C14681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BE31A015DF432000C14681 /* main.m in Sources */,
+				82BE31A415DF432000C14681 /* AppDelegate.m in Sources */,
+				82BE31A715DF432000C14681 /* ViewController.m in Sources */,
+				82BE31BD15DF432F00C14681 /* UIRadioBox.m in Sources */,
+				82BE31C215DF432F00C14681 /* UIRadioBoxItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82BE319C15DF432000C14681 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82BE319D15DF432000C14681 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82BE31A815DF432000C14681 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82BE31A915DF432000C14681 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82BE31AB15DF432000C14681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82BE31AC15DF432000C14681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82BE31AE15DF432000C14681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioBoxExample/RadioBoxExample-Prefix.pch";
+				INFOPLIST_FILE = "RadioBoxExample/RadioBoxExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82BE31AF15DF432000C14681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioBoxExample/RadioBoxExample-Prefix.pch";
+				INFOPLIST_FILE = "RadioBoxExample/RadioBoxExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82BE318915DF432000C14681 /* Build configuration list for PBXProject "RadioBoxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BE31AB15DF432000C14681 /* Debug */,
+				82BE31AC15DF432000C14681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82BE31AD15DF432000C14681 /* Build configuration list for PBXNativeTarget "RadioBoxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BE31AE15DF432000C14681 /* Debug */,
+				82BE31AF15DF432000C14681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82BE318615DF432000C14681 /* Project object */;
+}
