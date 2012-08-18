@@ -8,6 +8,13 @@
 
 #import "UIRadioBox.h"
 
+@interface UIRadioBox()
+{
+    int currentValue;
+}
+
+@end
+
 @implementation UIRadioBox
 
 -(id)init{
@@ -23,37 +30,32 @@
     [radioBoxItems setObject:item forKey:[NSNumber numberWithInt:val]];
 }
 
--(int)value{
-    for (NSNumber *key in radioBoxItems) {
-        if (((UIRadioBoxItem *)[radioBoxItems objectForKey:key]).checked) {
-            return [key intValue];
-            break;
-        }
-    }
-    return 0;
+-(void)setValue:(int)value{    
+    ((UIRadioBoxItem *)[radioBoxItems objectForKey:[NSNumber numberWithInt:currentValue]]).checked = NO;
+    currentValue = value;
+    ((UIRadioBoxItem *)[radioBoxItems objectForKey:[NSNumber numberWithInt:value]]).checked = YES;
 }
 
--(void)setValue:(int)value{
+-(int)value{
+    return currentValue;
+}
 
-    for (NSNumber *key in radioBoxItems) {
-        if ([key integerValue] == value) {
-            ((UIRadioBoxItem *)[radioBoxItems objectForKey:key]).checked = YES;
-        }else{
-            ((UIRadioBoxItem *)[radioBoxItems objectForKey:key]).checked = NO;
-        }
-    }
+-(NSString *)text{
+    return ((UIRadioBoxItem *)[radioBoxItems objectForKey:[NSNumber numberWithInt:currentValue]]).text;
 }
 
 #pragma mark - UICheckboxDelegate
 -(void)UIRadioBoxItemSelected:(UIRadioBoxItem *)sender{
-    NSArray *items = [radioBoxItems allValues];
-    for (UIRadioBoxItem *item in items) {
-        if (item != sender) {
+    for (NSNumber *key in radioBoxItems) {
+        UIRadioBoxItem *item = [radioBoxItems objectForKey:key];
+        if (item == sender) {
+            currentValue = [key intValue];
+        }else{
             item.checked = NO;
         }
     }
     if ([self.delegate respondsToSelector:@selector(RadioBoxValueChange:)]) {
-        [self.delegate RadioBoxValueChange:self.value];
+        [self.delegate RadioBoxValueChange:self];
     }
 }
 @end

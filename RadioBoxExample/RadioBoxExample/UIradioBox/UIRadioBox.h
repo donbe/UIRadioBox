@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "UIRadioBoxItem.h"
 
+@class UIRadioBox;
+
 @protocol UIRadioBoxDelegate <NSObject>
 
 @optional
--(void)RadioBoxValueChange:(int)value;
+-(void)RadioBoxValueChange:(UIRadioBox *)sender;
 
 @end
 
@@ -25,6 +27,7 @@
 
 @property(nonatomic) int value;
 @property(nonatomic,assign)id<UIRadioBoxDelegate>delegate;
+@property(nonatomic,readonly)NSString *text;
 
 -(void)addItem:(UIRadioBoxItem *)item value:(int)val;
 

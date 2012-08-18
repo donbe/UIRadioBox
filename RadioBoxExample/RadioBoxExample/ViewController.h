@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "UIradioBox.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIRadioBoxDelegate>
 {
     UIRadioBox *radioBox;
+    
+    IBOutlet UILabel *label;
 }
 @end

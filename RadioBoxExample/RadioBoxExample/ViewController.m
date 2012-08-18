@@ -31,6 +31,7 @@
     [self.view addSubview:nvRadioBoxItem];
     
     radioBox.value = 0;
+    radioBox.delegate = self;
 }
 
 - (void)viewDidUnload
@@ -44,4 +45,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+#pragma mark - UIRadioBoxDelegate
+-(void)RadioBoxValueChange:(UIRadioBox *)sender{
+    label.text = sender.text;
+}
 @end
